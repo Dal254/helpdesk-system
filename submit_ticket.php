@@ -23,12 +23,6 @@ function createMailer(): PHPMailer {
     $m->isSMTP();
     $m->Host       = 'smtp.office365.com';
     $m->SMTPAuth   = true;
-    $m->Username   = 'helpdesk@kdc.go.ke';
-    $m->Password   = 'Is@36977041';
-    $m->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $m->Port       = 587;
-    $m->isHTML(true);
-    $m->setFrom('helpdesk@kdc.go.ke', 'KDC Helpdesk');
     return $m;
 }
 
