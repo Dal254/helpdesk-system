@@ -12,10 +12,9 @@ function sendMail($to, $subject, $body) {
     try {
         // SMTP Settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.office365.com';          // ✅ Company mail server
+       
         $mail->SMTPAuth = true;
-        $mail->Username = 'helpdesk@kdc.go.ke';   // ✅ Company email
-        $mail->Password = 'Is@36977041';             // ✅ Company password
+       
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
